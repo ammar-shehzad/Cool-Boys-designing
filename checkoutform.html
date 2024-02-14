@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="navbar navbar-expand-lg navbar-light btn-color">
+    
+    <!-- logo -->
+    <span class="navbar-text">
+    <a href="index.html" class="navbar-brand textbold">
+        <span class="text-light textbold">COOL & BOYS</span>
+    </a>
+    </span>
+    
+    <button class="navbar-toggler">
+    <span class="navbar-toggler-icon"></span>
+    
+    </button>
+    
+    
+    <div class="navbar-collapse collapse justify-content-end">
+    
+    <div class="navbar-nav">
+        <li class="nav-item"><a href="index.html" class="nav-link text-light">HOME</a></li>
+        <li class="nav-item"><a href="aboutus.html" class="nav-link text-light">ABOUT US</a></li>
+        
+    <li class="nav-item dropdown"><a href="" class="nav-link text-light dropdown-toggle" data-bs-toggle="dropdown">Our Products</a>
+    
+    <ul class="dropdown-menu btn-color">
+        <li class="dropdown-item "><a href="jackets.html" class="nav-link ">JACKETS</a></li>
+        <li class="dropdown-item"><a href="shirts.html" class="nav-link">SHIRTS</a></li>
+        <li class="dropdown-item"><a href="shoes.html" class="nav-link ">SHOES</a></li>
+        
+    
+    </ul>
+    
+    
+    
+    </li>
+    
+    <li class="nav-item"><a href="aboutus.html" class="nav-link text-light">CONTACT US</a></li>
+    
+    </div>
+    
+    
+    </div>
+    
+    
+    
+    
+    <!--  -->
+    
+    
+    
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ 
+<!--  -->
+
+
+
+<div class="container">
+
+<div class="row my-4">
+
+<div class="col-lg-12 text-center">
+    <h1>CHECK OUT FORM</h1>
+    <h4>Please Fill All The Feilds</h4>
+</div>
+
+</div>
+
+
+
+
+
+
+<form action="thankyou.html" novalidate class="checkoutform">
+
+<div class="row">
+
+<!-- name -->
+
+<div class="col-lg-12">
+
+<label for="">Your Name</label><br>
+<input type="text" placeholder="Enter Your Name" class="form-control"  required>
+<div class="invalid-feedback">Please Fill This Feild</div>
+
+</div>
+
+<!--  -->
+
+
+<!-- Email -->
+
+<div class="col-lg-12 my-3">
+
+    <label for="">Your Email</label><br>
+    <input type="email" placeholder="Enter Your Email" class="form-control" required>
+    <div class="invalid-feedback">Please Fill This Feild</div>
+    
+    </div>
+    
+
+
+<!--  -->
+
+
+
+<!-- Address -->
+
+<div class="col-lg-12 my-3">
+
+    <label for="">Your Address</label><br>
+    <input type="text" placeholder="Enter Your Address" class="form-control" required>
+    <div class="invalid-feedback">Please Fill This Feild</div>
+    
+    </div>
+    
+
+
+<!--  -->
+
+
+<!-- phone -->
+
+<div class="col-lg-6 my-3">
+
+    <label for="">Your Phone Number</label><br>
+    <input type="number" placeholder="Enter Your number" class="form-control" required >
+    <div class="invalid-feedback">Please Fill This Feild</div>
+    
+    </div>
+    
+
+
+<!--  -->
+
+
+
+<!-- Payment-->
+
+<div class="col-lg-6 my-3">
+
+    <label for="">Payment Method</label><br>
+  
+    <select name="" id="" class="form-control" required>
+
+<option value="">Choose Payment Method</option>
+<option value="">Cash On Delivery</option>
+<option value="">Pay Pal</option>
+
+
+    </select>
+
+
+    <div class="invalid-feedback">Please Fill This Feild</div>
+    
+    </div>
+    
+
+
+<!--  -->
+
+
+
+<div class="col-lg-12 text-center my-3">
+
+<input type="submit" value="Place Order" class="btn btn-color w-25" onclick="validate()">
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.checkoutform')
+   
+   // Loop over them and prevent submission
+   Array.prototype.slice.call(forms)
+     .forEach(function (form) {
+       form.addEventListener('submit', function (event) {
+         if (!form.checkValidity()) {
+           event.preventDefault()
+           event.stopPropagation()
+         }
+   
+         form.classList.add('was-validated')
+       }, false)
+     })
+       
+   </script>
+
+
+</body>
+</html>

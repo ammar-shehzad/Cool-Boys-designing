@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+
+body{
+    overflow-x: hidden;
+    background-color:white ;
+}
+
+.textbold{
+font-weight: bolder;
+font-style: italic;
+}
+
+.btn-color{
+    background-color: #b64b03;
+    color: white;
+}
+
+
+
+footer{
+
+
+    background-color:	#030327;
+    color: white;
+
+
+}
+
+
+
+.card {
+   
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+
+  /* Hover effect for the card */
+  .card:hover {
+    transform: scale(1.20); /* Increase the size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Styling for card title */
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+ 
+  
+.navbar-nav .nav-item .dropdown-menu .dropdown-item a{
+
+  
+    background-color: #b64b03;
+    color: white;
+}
+
+
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item a:hover{
+
+  
+  background-color: #f0c6aa;
+  color: black;
+}
+

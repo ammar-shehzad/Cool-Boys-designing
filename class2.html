@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    
+<div class="container">
+
+<div class="row">
+    <div class="col-md-12" id="box1">
+        <p>
+            <h1>Hide/show/toggle</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et iusto quo voluptatum quaerat provident nisi aliquam voluptate, mollitia reprehenderit modi vero eos deleniti dolor? Laborum sequi, commodi delectus ex architecto accusantium sed maiores, doloribus repellat ratione blanditiis rem perferendis esse nisi optio minima dolorum quaerat necessitatibus nostrum veritatis! Dolores, voluptatibus modi unde neque a, repellat, omnis facilis corrupti ratione cum praesentium tenetur ea. Consectetur culpa nostrum deserunt, quod nobis iure. Veritatis, quas! Officia praesentium exercitationem saepe ex unde reiciendis deleniti aperiam vero odit nemo pariatur, in, laboriosam, hic illum quis delectus quod optio magni provident! Magni illum quidem esse beatae.
+        
+        </p>
+    </div>
+
+
+    <div class="col-md-12">
+
+        
+        <button class="btn btn-info" id="h">hide</button>
+        <button class="btn btn-info" id="s">show</button>
+        <button class="btn btn-info" id="t">toggle</button>
+    </div>
+        
+</div>
+
+
+<!-- slide uu/slide down/slidetoggle -->
+
+
+
+<div class="row">
+    <div class="col-md-12" id="box2">
+        <p>
+            <h1>slide-up/slide-down/slide-toggle</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et iusto quo voluptatum quaerat provident nisi aliquam voluptate, mollitia reprehenderit modi vero eos deleniti dolor? Laborum sequi, commodi delectus ex architecto accusantium sed maiores, doloribus repellat ratione blanditiis rem perferendis esse nisi optio minima dolorum quaerat necessitatibus nostrum veritatis! Dolores, voluptatibus modi unde neque a, repellat, omnis facilis corrupti ratione cum praesentium tenetur ea. Consectetur culpa nostrum deserunt, quod nobis iure. Veritatis, quas! Officia praesentium exercitationem saepe ex unde reiciendis deleniti aperiam vero odit nemo pariatur, in, laboriosam, hic illum quis delectus quod optio magni provident! Magni illum quidem esse beatae.
+        
+        </p>
+    </div>
+
+
+    <div class="col-md-12">
+
+        
+        <button class="btn btn-info" id="su">slide up</button>
+        <button class="btn btn-info" id="sd">slide down</button>
+        <button class="btn btn-info" id="st">slide toggle</button>
+    </div>
+        
+</div>
+
+
+
+
+<!--  -->
+
+
+
+<!-- fadein/fadeout/fade toggle -->
+
+<div class="row">
+    <div class="col-md-12" id="box3">
+        <p>
+            <h1>slide-up/slide-down/slide-toggle</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et iusto quo voluptatum quaerat provident nisi aliquam voluptate, mollitia reprehenderit modi vero eos deleniti dolor? Laborum sequi, commodi delectus ex architecto accusantium sed maiores, doloribus repellat ratione blanditiis rem perferendis esse nisi optio minima dolorum quaerat necessitatibus nostrum veritatis! Dolores, voluptatibus modi unde neque a, repellat, omnis facilis corrupti ratione cum praesentium tenetur ea. Consectetur culpa nostrum deserunt, quod nobis iure. Veritatis, quas! Officia praesentium exercitationem saepe ex unde reiciendis deleniti aperiam vero odit nemo pariatur, in, laboriosam, hic illum quis delectus quod optio magni provident! Magni illum quidem esse beatae.
+        
+        </p>
+    </div>
+
+
+    <div class="col-md-12">
+
+        
+        <button class="btn btn-info" id="fi">fade in</button>
+        <button class="btn btn-info" id="fo">fadeOut</button>
+        <button class="btn btn-info" id="ft">fadeToggle</button>
+    </div>
+        
+</div>
+
+
+
+
+
+
+<!--  -->
+
+</div>
+
+
+
+<script>
+
+$(document).ready(function(){
+
+
+$("#h").click(function(){
+
+$("#box1").hide(1000)
+
+})
+
+// show
+$("#s").click(function(){
+
+$("#box1").show(1000)
+
+})
+
+// 
+
+
+// toggle
+
+$("#t").click(function(){
+    $("#box1").toggle(1000)
+})
+
+// 
+
+
+// slide up
+$("#su").click(function(){
+    $("#box2").slideUp(1000)
+})
+
+// 
+
+
+// slide down
+$("#sd").click(function(){
+    $("#box2").slideDown(1000)
+})
+
+// 
+
+// slide toggle
+$("#st").click(function(){
+    $("#box2").slideToggle(1000)
+})
+
+// 
+
+// fadein
+
+$("#fi").click(function(){
+    $("#box3").fadeIn(1000)
+})
+
+
+// 
+
+
+// fade out
+
+$("#fo").click(function(){
+    $("#box3").fadeOut(1000)
+})
+
+
+
+// 
+
+
+
+// fade toggle
+
+$("#ft").click(function(){
+    $("#box3").fadeToggle(1000)
+})
+
+
+
+// 
+
+
+
+})
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

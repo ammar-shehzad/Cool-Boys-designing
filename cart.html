@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Add to Cart</title>
+<style>
+  /* Basic CSS for product display */
+  .product {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+    display: inline-block;
+  }
+  .btn-add-to-cart {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="product" id="product1">
+  <h2>Product 1</h2>
+  <p>$10.00</p>
+  <button class="btn-add-to-cart" onclick="addToCart('product1', 'Product 1', 10.00)">Add to Cart</button>
+</div>
+
+<div class="product" id="product2">
+  <h2>Product 2</h2>
+  <p>$15.00</p>
+  <button class="btn-add-to-cart" onclick="addToCart('product2', 'Product 2', 15.00)">Add to Cart</button>
+</div>
+
+<div id="cart">
+  <h2>Cart</h2>
+  <ul id="cart-items">
+  </ul>
+  <p>Total: $<span id="cart-total">0.00</span></p>
+</div>
+
+<script>
+  // Function to add item to cart
+  function addToCart(productId, productName, productPrice) {
+    // Create cart item
+    var item = {
+      id: productId,
+      name: productName,
+      price: productPrice
+    };
+
+    // Add item to cart array
+    cart.push(item);
+
+    // Update cart display
+    updateCartDisplay();
+  }
+
+  // Function to update cart display
+  function updateCartDisplay() {
+    var cartList = document.getElementById("cart-items");
+    var cartTotal = document.getElementById("cart-total");
+    var total = 0;
+
+    // Clear current cart display
+    cartList.innerHTML = "";
+
+    // Loop through cart items
+    cart.forEach(function(item) {
+      var li = document.createElement("li");
+      li.textContent = item.name + " - $" + item.price;
+      cartList.appendChild(li);
+
+      // Calculate total
+      total += item.price;
+    });
+
+    // Update total
+    cartTotal.textContent = total.toFixed(2);
+  }
+
+  // Array to store cart items
+  var cart = [];
+</script>
+
+</body>
+</html>
